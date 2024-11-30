@@ -27,7 +27,7 @@ export class PokemonService {
     }
   }
 
-  findAll() {
+  async findAll() {
     return `This action returns all pokemon`;
   }
 
