@@ -18,7 +18,7 @@ npm i -g @nestjs/cli
 docker-compose up -d
 ```
 
-5. Clone ```.env.template```
+5. Clone `.env.template`
 
 6. Rebuild the database with the seed
 
@@ -27,11 +27,24 @@ docker-compose up -d
 ```
 
 7. Run the application
+
 ```
 pnpm start:dev
 ```
 
-## Stack
+# Production build
+
+1. Create `env.prod` file
+
+2. Complete environment variables
+
+3. Build the image
+
+```bash
+docker-compose -f docker-compose.prod.yaml --env-file .env.prod up
+```
+
+# Stack
 
 - Nestjs
 - Mongo

@@ -28,4 +28,9 @@ import { JoiValidationSchema } from './config/joi.validation';
   controllers: [],
   providers: [],
 })
-export class AppModule {}
+export class AppModule {
+  constructor() {
+    console.log(`MONGO_URL ${process.env.MONGO_URL}`);
+    console.log(`PORT ${process.env.PORT}`);
+  }
+}
